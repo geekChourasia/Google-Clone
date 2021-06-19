@@ -1,0 +1,58 @@
+.search_input{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 75vw; /* whatever the screen size it will automatically set with 75% */
+    margin: 0 auto; /* its a trick to make horizontally center*/
+    margin-top: 40px;
+    max-width: 560px; /* we dont want search bar so huge so we set a limits */
+}
+
+
+.search_input>input{
+    flex: 1; /* we want search input take majority of spaces*/
+    padding: 10px 20px;
+    font-size: medium;
+    border: none;
+
+}
+
+.search_input>input:focus{ /* so when we click in input blue border outline will disappear and 0 will like boolean*/
+    outline-width: 0;
+}
+
+.search_inputIcon{
+    color: grey; /* it basically a search icon */
+}
+
+.search_buttons{
+    margin-top: 30px ;
+    display: flex;
+    justify-content: center;
+
+}
+
+.search_buttons button{
+    margin: 5px;
+    padding: 7px 15px;
+    background-color: #f8f8f8;
+    border: 1px solid white;
+    text-transform: inherit; /*Inherits this property from its parent element.*/
+    color: #5f6368;
+}
+
+.search_buttons button:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8); /* its make more 3D when we hover it*/
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+
+.search_buttonsHidden{
+    display:none !important;
+}
